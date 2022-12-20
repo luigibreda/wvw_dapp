@@ -1,0 +1,53 @@
+{
+  "name": "krypton",
+  "version": "4.1.2",
+  "description": "Krypton - Bulma + Alpine JS ICO/Crypto Starter",
+  "author": {
+    "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "@alpinejs/collapse": "3.10.4",
+    "@alpinejs/intersect": "3.10.4",
+    "@alpinejs/persist": "3.10.4",
+    "alpinejs": "3.10.4",
+    "bulma": "0.9.4",
+    "aos": "3.0.0-beta.6",
+    "feather-icons": "4.28.0",
+    "js-datepicker": "5.18.0",
+    "notyf": "3.10.0",
+    "plyr": "3.6.9",
+    "postcss": "8.3.11",
+    "simplebar": "5.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.0",
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.4",
+    "@babel/register": "7.16.0",
+    "autoprefixer": "10.4.0",
+    "babelify": "10.0.0",
+    "browser-sync": "2.27.10",
+    "browserify": "17.0.0",
+    "del": "6.0.0",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "8.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-imagemin": "8.0.0",
+    "gulp-purgecss": "4.0.3",
+    "gulp-replace": "1.1.3",
+    "gulp-sass": "5.0.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-uglify": "3.0.2",
+    "gulp-webp": "4.0.1",
+    "log-symbols": "5.0.0",
+    "panini": "1.7.2",
+    "sass": "1.43.4",
+    "vinyl-source-stream": "2.0.0"
+  }
+}
