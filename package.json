@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Tema WVW",
   "author": {
-    "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
+    "name": "Luigi Breda <https://github.com/luigibreda>, Bruno Eising <https://github.com/Brunoeising/>, Pedro Pelicione <https://github.com/pedro-pelicioni/>"
   },
   "scripts": {
     "dev": "gulp",
