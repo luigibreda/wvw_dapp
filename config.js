@@ -11,10 +11,10 @@ export default {
       img: "./src/img",
     },
     dist: {
-      base: "./dist",
-      css: "./dist/css",
-      js: "./dist/js",
-      img: "./dist/img",
+      base: "./public",
+      css: "./public/css",
+      js: "./public/js",
+      img: "./public/img",
     },
     build: {
       base: "./build",

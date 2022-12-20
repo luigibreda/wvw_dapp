@@ -15,5 +15,5 @@ RUN pnpm build
 FROM bitnami/nginx:1.22 AS prod
 WORKDIR /app
 
-COPY --from=build /app/dist .
+COPY --from=build /app/public .
 COPY ./nginx/alpinejs.conf /opt/bitnami/nginx/conf/server_blocks/nginx.conf

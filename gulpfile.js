@@ -89,8 +89,8 @@ function concatJs() {
 function concatCssPlugins() {
   console.log(logSymbols.info, "Compiling Plugin styles..");
   return src([
-    nodepath + "simplebar/dist/simplebar.min.css",
-    nodepath + "plyr/dist/plyr.css",
+    nodepath + "simplebar/public/simplebar.min.css",
+    nodepath + "plyr/public/plyr.css",
     "src/vendor/css/*",
   ])
     .pipe(sourcemaps.init())
