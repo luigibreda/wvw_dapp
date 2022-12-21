@@ -1,9 +1,9 @@
 {
-  "name": "wvw",
-  "version": "1.0",
-  "description": "Tema WVW",
+  "name": "krypton",
+  "version": "4.1.2",
+  "description": "Krypton - Bulma + Alpine JS ICO/Crypto Starter",
   "author": {
-    "name": "Luigi Breda <https://github.com/luigibreda>, Bruno Eising <https://github.com/Brunoeising/>, Pedro Pelicione <https://github.com/pedro-pelicioni/>"
+    "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
   "scripts": {
     "dev": "gulp",
