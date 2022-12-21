@@ -78,7 +78,7 @@ export function initHero() {
                             "enable": true,
                             "mode": "grab"
                         },
-                        "onclick": {
+                        "/public": {
                             "enable": true
                         },
                         "resize": true

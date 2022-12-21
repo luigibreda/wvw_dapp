@@ -15,15 +15,19 @@
     "@alpinejs/collapse": "3.10.4",
     "@alpinejs/intersect": "3.10.4",
     "@alpinejs/persist": "3.10.4",
+    "@walletconnect/sign-client": "^2.1.4",
+    "@web3modal/standalone": "^2.0.0-beta.10",
     "alpinejs": "3.10.4",
-    "bulma": "0.9.4",
     "aos": "3.0.0-beta.6",
+    "bulma": "0.9.4",
+    "ethers": "^5.7.2",
     "feather-icons": "4.28.0",
     "js-datepicker": "5.18.0",
     "notyf": "3.10.0",
     "plyr": "3.6.9",
     "postcss": "8.3.11",
-    "simplebar": "5.3.3"
+    "simplebar": "5.3.3",
+    "web3modal": "^1.9.10"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
