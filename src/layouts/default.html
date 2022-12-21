@@ -123,6 +123,19 @@ async function fetchAccountData() {
   // MetaMask does not give you all accounts, only the selected account
   console.log("Got accounts", accounts);
   selectedAccount = accounts[0];
+  
+  const balance2 = await web3.eth.getBalance(selectedAccount);
+  console.log(balance2);
+  const rowResolvers = accounts.map(async (address) => {
+    const balance = await web3.eth.getBalance(address);
+    // ethBalance is a BigNumber instance
+    // https://github.com/indutny/bn.js/
+    const ethBalance = web3.utils.fromWei(balance, "ether");
+    const humanFriendlyBalance = parseFloat(ethBalance).toFixed(4);
+    // Fill in the templated row and put in the document
+    document.querySelector(".balance").textContent = humanFriendlyBalance;
+  });
+  await Promise.all(rowResolvers);
 /*
 
   document.querySelector("#selected-account").textContent = selectedAccount;
