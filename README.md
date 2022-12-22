@@ -2,11 +2,11 @@
 
 > WVW is a Crypto Project of Watch and Earn / Crypto template built by Web3Kings.
 
-[![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://go.cssninja.io/discord)
+[![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://discord.gg/Vc2H8HcNeW)
 
 ![Screenshot](https://ik.imagekit.io/pedropelicioni/imagem_2022-12-21_235727962.png?ik-sdk-version=javascript-1.4.3&updatedAt=1671677851156 "WVW")
 
-## ✌️ preview
+## ✌️ Preview
 
 Check out the live demo by clicking [here](https://wvw-dapp-web3-kings.vercel.app). 
 Fresh is built with [Bulma](https://bulma.io) and [Alpine JS](https://github.com/alpinejs/alpine).
