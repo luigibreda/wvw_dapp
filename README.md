@@ -1,14 +1,14 @@
-# 👋 Krypton
+# 👋 WVW DAPP 
 
-> Krypton is a free ICO / Crypto template built by [cssninjaStudio](https://cssninja.io).
+> WVW is a Crypto Project of Watch and Earn / Crypto template built by Web3Kings.
 
 [![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://go.cssninja.io/discord)
 
-![Screenshot](https://media.cssninja.io/products/krypton/product.png "Krypton")
+![Screenshot](https://ik.imagekit.io/pedropelicioni/imagem_2022-12-21_235727962.png?ik-sdk-version=javascript-1.4.3&updatedAt=1671677851156 "WVW")
 
 ## ✌️ preview
 
-Check out the live demo by clicking [here](https://krypton.cssninja.io). 
+Check out the live demo by clicking [here](https://wvw-dapp-web3-kings.vercel.app). 
 Fresh is built with [Bulma](https://bulma.io) and [Alpine JS](https://github.com/alpinejs/alpine).
 
 ## 👍 Features
@@ -18,24 +18,18 @@ Fresh is built with [Bulma](https://bulma.io) and [Alpine JS](https://github.com
 * ES6 support
 * Alpine v3.x
 
-## 👌 Usage
+## 👌 Como usar
 
 1. Install Depedencies
 
 ```sh
-pnpm i
+npm install
 ```
 
 2. Run in dev mode
 
 ```sh
-pnpm dev
-```
-
-3. Or build source
-
-```sh
-pnpm build
+ npm run dev
 ```
 
 ## 🍔 Issues
@@ -48,10 +42,3 @@ If you've found an issue or a bug, you can report it in the issues section of th
 * steps to reproduce
 * Already tried fixes (if relevant)
 
-## 🎉 More
-
-Find more premium website and app templates on [Css Ninja](https://cssninja.io/).
-
-## 🚀 About Us
-
-Css Ninja is a web design studio. We build handcrafted and polished templates that will give some hype to your startup or to your next project.
