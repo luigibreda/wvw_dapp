@@ -5,13 +5,13 @@
  */
 
  // Unpkg imports
-//const Web3Modal = window.Web3Modal.default;
+const Web3Modal = window.Web3Modal.default;
 const WalletConnectProvider = window.WalletConnectProvider.default;
-//const EvmChains = window.EvmChains;
 const Fortmatic = window.Fortmatic;
 
+// Web3modal instance   
 
-import Web3Modal from "web3modal";
+//import Web3Modal from "web3modal";
 
 //import WalletConnectProvider from "@walletconnect/web3-provider";
 //import Fortmatic from "Fortmatic";

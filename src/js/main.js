@@ -21,7 +21,7 @@ Alpine.start();
 
 import { initPageLoader } from "./libs/components/pageloader/pageloader";
 import "./libs/components";
-import "./connectWallet";
+//import "./connectWallet";
 
 //console.log(balance);
 
