@@ -28,7 +28,7 @@ body {
 ========================================================================== */
 
 .dark-wrapper {
-    background: url(../img/bg/gradient-left-darker.png) repeat-y top left, url(../img/bg/gradient-right-darker.png) repeat-y top right, #1c004c;
+    background: url(../img/bg/gradient-left-darker.png) repeat-y top left, url(../img/bg/gradient-right-darker.png) repeat-y top right, #270b4a;
 }
 
 .hero, .section {
@@ -197,13 +197,13 @@ body {
 
             //Dark modifier
             &.is-dark {
-                background: #2d0275 !important;
+                background: #03021d !important;
 
                 a {
                     color: $white;
 
                     &:hover {
-                        color: #fcfcfc;
+                        color: #03021d;
                     }
                 }
 
@@ -284,19 +284,19 @@ body {
 
     //Background colors
     &.is-dark {
-        background: #3c019e;
+        background: #270b4a;
     }
 
     &.is-darker {
-        background: #320184;
+        background: #270b4a;
     }
 
     &.is-darkest {
-        background: #270068;
+        background: #270b4a;
     }
 
     &.is-end {
-        background: #1c004c;
+        background: #270b4a;
     }
 
     //Background shapes
@@ -312,12 +312,12 @@ body {
 
 //Radial gradient background
 .has-big-gradient {
-    background: url(../img/bg/gradient-left.png) no-repeat top left, url(../img/bg/gradient-right.png) no-repeat top right, #320184;
+    background: url(../img/bg/gradient-left.png) no-repeat top left, url(../img/bg/gradient-right.png) no-repeat top right, #270b4a;
 }
 
 //Dark radial gradient background
 .has-big-dark-gradient {
-    background: url(../img/bg/gradient-left-darker.png) no-repeat top left, url(../img/bg/gradient-right-darker.png) no-repeat top right, #1c004c;
+    background: url(../img/bg/gradient-left-darker.png) no-repeat top left, url(../img/bg/gradient-right-darker.png) no-repeat top right, #270b4a;
 }
 
 //CTA Spacing
