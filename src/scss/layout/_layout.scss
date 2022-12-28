@@ -697,7 +697,7 @@ body {
 ========================================================================== */
 
 .roadmap-wrapper {
-    background: url(../img/bg/bg-token-top.png) no-repeat top center, url(../img/bg/bg-token-left.png) no-repeat top left, url(../img/bg/bg-token-bottom.png) no-repeat bottom right, #1c004c;
+    background: url(../img/bg/bg-token-top.png) no-repeat top center, url(../img/bg/bg-token-left.png) no-repeat top left, url(../img/bg/bg-token-bottom.png) no-repeat bottom right, #020329;
 }
 
 .roadmap-wrapper {
@@ -968,7 +968,7 @@ body {
 ========================================================================== */
 
 .media-wrapper {
-    background: url(../img/bg/gradient-left-darker.png) no-repeat top left, url(../img/bg/gradient-right-darker.png) no-repeat top right, #1c004c;
+    background: url(../img/bg/gradient-left-darker.png) no-repeat top left, url(../img/bg/gradient-right-darker.png) no-repeat top right, #020329;
 }
 
 .media-wrapper {
@@ -1110,7 +1110,7 @@ body {
             min-height: 40px;
             display: flex;
             align-items: center;
-            background: #1c004c;
+            background: #020329;
             color: $white;
             border-top: 1px solid lighten(#020329, 5%);
             position: absolute;
@@ -1144,7 +1144,7 @@ body {
         input:checked + label {
             order: 1;
             z-index: 2;
-            background: #1c004c;
+            background: #020329;
             border-top: none;
             position: relative;
         }
