@@ -56,13 +56,110 @@ title: Home
                             <progress class="progress ico-progress" value="35" max="100">35%</progress>
                         </div>
 
-                        <!-- Button -->
-                        <div class="button-block">
-                            <a href="#" class="button k-button k-secondary raised has-gradient is-bold is-fullwidth rounded">
-                                <span class="text">Comprar Tokens!</span>
-                                <span class="front-gradient"></span>
-                            </a>
-                        </div>
+                          <!-- Testes -->
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-12">
+                      
+                                <div id="prepare">
+                                    <!-- Button -->
+                                    <div class="button-block">
+                                        <a href="#" class="button k-button k-secondary raised has-gradient is-bold is-fullwidth rounded" id="btn-connect">
+                                            <span class="text">Conectar Wallet</span>
+                                            <span class="front-gradient"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+
+                      
+                                <div id="connected" style="display: none">
+                                  
+                                    <!-- Button 
+                                    <div class="button-block">
+                                        <a href="#" class="button k-button k-secondary raised has-gradient is-bold is-fullwidth rounded" id="btn-disconnect">
+                                            <span class="text">Desconectar Wallet</span>
+                                            <span class="front-gradient"></span>
+                                        </a>
+                                    </div>-->
+
+                                    <!-- Input Comprar Tokens -->
+                                    <div class="columns">
+                                        <div class="column is-10 is-offset-1" style="    background-color: #00000094;    margin-top: 4%;    border-radius: 15px;">
+                                        <!-- Form -->
+                                        <form class="contact-form">
+                                            <!-- Field -->
+                                            <div class="control-material is-secondary">
+                                            <input id="input_valor" class="material-input" type="text" required />
+                                            <span class="material-highlight"></span>
+                                            <span class="bar"></span>
+                                            <div class="label" style="    color: #ffffff4d;">1 WVWV = 0.0002 BNB</div>
+
+                                            <label>Quantidade de Tokens:</label>
+                                            </div>
+
+                                            <!-- Submit -->
+                                            <div class="has-text-centered">
+                                            <button
+                                                class="button is-button k-button k-primary raised has-gradient is-fat is-bold is-submit"
+                                                id="botao-comprar"
+                                            >
+                                                <span class="text">Comprar</span>
+                                                <span class="front-gradient"></span>
+                                            </button>
+                                            </div>
+                                        </form>
+                                        <!-- /Form -->
+                                        </div>
+                                    </div>
+                                    <!-- Input Comprar Tokens -->
+
+                      
+                                 <br/>
+                                <!--
+                                <div id="network" style="display: none;">
+                                    <p>
+                                      <strong>Connected blockchain:</strong> <span id="network-name"></span>
+                                    </p>
+                      
+                                    <p>
+                                      <strong>Selected account:</strong> <span id="selected-account"></span>
+                                    </p>
+                      
+                                  </div>
+                      
+                                  <hr>
+                      
+                                  <h3>All account balances</h3>
+                      
+                                  <table class="table table-listing">
+                                    <thead>
+                                      <th>Address</th>
+                                      <th>ETH balance</th>
+                                    </thead>
+                      
+                                    <tbody id="accounts">
+                                    </tbody>
+                                  </table>
+                      
+                                  <p>Please try to switch between different accounts in your wallet if your wallet supports this functonality.</p>
+                      
+                                </div>-->
+                      
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <!-- We use simple <template> templating for the example -->
+                          <div id="templates" style="display: none">
+                            <template id="template-balance">
+                              <tr>
+                                <th class="address"></th>
+                                <td class="balance"></td>
+                              </tr>
+                            </template>
+                          </div>
+                          <!-- Testes -->
 
                         <!-- Icons -->
                         <div class="icon-block">
