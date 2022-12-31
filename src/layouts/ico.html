@@ -136,8 +136,7 @@ async function fetchAccountData() {
     button.disabled = "true";
     // Pega valor do input 
     const valorInput = document.getElementById('input_valor').value;
-    const valorInputWei = web3.utils.toWei(valorInput, "ether");
-    console.log('Valor Input em Wei: ',valorInputWei);
+    console.log('Valor Input em Wei: ',valorInput);
     if (valorInput == 0) {
       alert('Valor não pode ser 0');
       button.disabled = false;
@@ -146,8 +145,8 @@ async function fetchAccountData() {
     
     // call buyTokens if erro return message
     try {
-      const comprar = await contract.methods.buyTokens(valorInputWei.toString()).send({from: accounts[0]});
-      console.log('Resposta comprar: ', comprar);
+      const teste = await contract.methods.buyTokens(valorInput.toString()).send({from: accounts[0]});
+      console.log(teste);
     } catch (error) {
       console.log(error.message);
       alert(error.message);
