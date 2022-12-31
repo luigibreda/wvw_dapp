@@ -153,6 +153,13 @@ function copyFonts() {
     .pipe(browserSync.stream());
 }
 
+function copyContracts() {
+  console.log(logSymbols.info, "Copying Contracts to dist folder.");
+  return src(["src/contracts/*"])
+    .pipe(dest("dist/contracts"))
+    .pipe(browserSync.stream());
+}
+
 function watchFiles() {
   watch(
     `${options.paths.src.base}/**/*.html`,
@@ -178,6 +185,7 @@ const buildTasks = [
   parallel(
     concatJs,
     copyFonts,
+    copyContracts,
     concatCssPlugins,
     compileSCSS,
     javascriptBuild,

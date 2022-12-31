@@ -116,19 +116,16 @@ async function fetchAccountData() {
   web3.eth.getAccounts(console.log);
 
   // Pega o JSON do contrato
-  const json = await fetch('http://localhost:9050/WVWPreSale.json')
+  const json = await fetch('http://localhost:9050/contracts/WVWPreSale.json')
   const ABI = await json.json()
   const contract = new web3.eth.Contract(ABI.abi, "0x5B4A6E00B6974AeB8Fcc15c260C2f18Dffe20127");
   console.log('Contrato : ',contract);
   
-  // Pega o Nome do Contrato
-  const ContractName = await contract.methods.getTokenPrice().call();
-  console.log('Token Preço: ', ContractName.toString());
-  const SimboloContrato = await contract.methods.getSpentValue(accounts[0]).call();
-  console.log('Valor Gasto: ', SimboloContrato.toString());
-  
-  const valor = web3.utils.toWei('2', "ether");
-  console.log('Valor em Wei: ',valor);
+  // Pega o Preço do Token e o Valor Gasto
+  const TokenPreco = await contract.methods.getTokenPrice().call();
+  console.log('Token Preço: ', TokenPreco.toString());
+  const ValorGasto = await contract.methods.getSpentValue(accounts[0]).call();
+  console.log('Valor Gasto: ', ValorGasto.toString());
 
   // Quando o botão é clicado
   var button = document.getElementById("botao-comprar");
@@ -136,16 +133,41 @@ async function fetchAccountData() {
     button.disabled = "true";
     // Pega valor do input 
     const valorInput = document.getElementById('input_valor').value;
-    console.log('Valor Input em Wei: ',valorInput);
+    // Valor do Input vezes o Preço do Token
+    const ValorInputWei = valorInput * TokenPreco;
+    console.log('Valor Input vezes preço do Token em Wei: ', ValorInputWei.toString());
+      
+
     if (valorInput == 0) {
       alert('Valor não pode ser 0');
       button.disabled = false;
       return;
     }
     
+    const ValorMaxWei = web3.utils.toWei('3', 'ether');
+    const ValorMinWei = web3.utils.toWei('0.1', 'ether');
+    const valorInputWei = web3.utils.toWei(valorInput, "ether");
+
+    console.log('----------------------------------------------------');
+    console.log('Valor Input em Wei: ',valorInputWei);
+    console.log('Valor Max em Wei: ',ValorMaxWei);
+    console.log('Valor Min em Wei: ',ValorMinWei);
+    console.log('----------------------------------------------------');
+
+    if (valorInputWei > ValorMaxWei) {
+      alert('Valor não pode ser maior que 3 BNB');
+      button.disabled = false;
+      return;
+    }
+    if (valorInputWei < ValorMinWei) {
+      alert('Valor não pode ser menor que 0.1 BNB');
+      button.disabled = false;
+      return;
+    }
+    
     // call buyTokens if erro return message
     try {
-      const teste = await contract.methods.buyTokens(valorInput.toString()).send({from: accounts[0]});
+      const teste = await contract.methods.buyTokens(ValorInputWei.toString()).send({from: accounts[0]});
       console.log(teste);
     } catch (error) {
       console.log(error.message);
