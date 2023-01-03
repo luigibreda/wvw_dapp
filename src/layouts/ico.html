@@ -125,8 +125,7 @@
         // Pega o Preço do Token e o Valor Gasto
         const TokenPreco = await contract.methods.getTokenPrice().call();
         console.log('Token Preço: ', TokenPreco.toString());
-        const ValorGasto = await contract.methods.getSpentValue(accounts[0]).call();
-        console.log('Valor Gasto: ', ValorGasto.toString());
+
 
         // Quando o botão é clicado
         var button = document.getElementById("botao-comprar");
@@ -135,8 +134,13 @@
           // Pega valor do input 
           const valorInput = document.getElementById('input_valor').value;
           // Valor do Input vezes o Preço do Token
-          const ValorInputWei = valorInput * TokenPreco;
-          console.log('Valor Input vezes preço do Token em Wei: ', ValorInputWei.toString());
+          //console.log('valor input:', valorInput);
+
+          //const ValorInputWei = valorInput * TokenPreco;
+          const ValorInputWei = web3.utils.BN(valorInput).mul(web3.utils.BN(TokenPreco));
+          console.log('ValorInputWei: ', ValorInputWei.toString());
+          console.log('valorInput: ', valorInput);
+          console.log('TokenPreco: ', TokenPreco);
 
 
           if (valorInput == 0) {
@@ -145,30 +149,47 @@
             return;
           }
 
-          const ValorMaxWei = web3.utils.toWei('3', 'ether');
-          const ValorMinWei = web3.utils.toWei('0.1', 'ether');
-          const valorInputWei = web3.utils.toWei(valorInput, "ether");
+          const ValorGasto = await contract.methods.getSpentValue(accounts[0]).call();
+          //console.log('Valor Gasto: ', ValorGasto.toString());
 
-          console.log('----------------------------------------------------');
-          console.log('Valor Input em Wei: ', valorInputWei);
-          console.log('Valor Max em Wei: ', ValorMaxWei);
-          console.log('Valor Min em Wei: ', ValorMinWei);
-          console.log('----------------------------------------------------');
+          const getMinWei = await contract.methods.getMinWei().call();
+          console.log('getMinWei: ', getMinWei.toString());
 
-          if (valorInputWei > ValorMaxWei) {
-            alert('Valor não pode ser maior que 3 BNB');
-            button.disabled = false;
+          const getMaxWei = await contract.methods.getMaxWei().call();
+          console.log('getMaxWei: ', getMaxWei.toString());
+
+          const novoValor = web3.utils.BN(ValorGasto).add(web3.utils.BN(ValorInputWei));
+          //console.log('Novo Valor: ', novoValor.toString());
+          //debugger;
+
+          let valorMax = web3.utils.BN(novoValor).cmp(web3.utils.BN(getMaxWei));
+          console.log('valorMax: ', valorMax.toString());
+
+          let valorMin = web3.utils.BN(ValorInputWei).cmp(web3.utils.BN(getMinWei));
+          console.log('valorMin: ', valorMin.toString());
+
+          if (valorMax > 0) {
+            console.log("Travou Valor Max");
+            alert("Valor Máximo atingido");
             return;
           }
-          if (valorInputWei < ValorMinWei) {
-            alert('Valor não pode ser menor que 0.1 BNB');
-            button.disabled = false;
+
+          if (valorMin < 0) {
+            console.log("Travou Valor Min");
+            alert("Valor Mínimo não atingido");
             return;
           }
+
+          const testBigN = 10000 * 5000000000000;
+          console.log("1", testBigN);
+
+          const testBigN2 = web3.utils.BN(10000).mul(web3.utils.BN(5000000000000));
+          console.log(testBigN2.toString());
+          console.log(valorInput);
 
           // call buyTokens if erro return message
           try {
-            const teste = await contract.methods.buyTokens(ValorInputWei.toString()).send({ from: accounts[0] });
+            const teste = await contract.methods.buyTokens(valorInput).send({ from: accounts[0], value: testBigN2.toString() });
             console.log(teste);
           } catch (error) {
             console.log(error.message);
