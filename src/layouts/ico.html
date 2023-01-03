@@ -97,124 +97,131 @@
      */
     async function fetchAccountData() {
 
+      try {
 
-      // Pega a instancia da Wallet
-      const web3 = new Web3(provider);
+        // Pega a instancia da Wallet
+        const web3 = new Web3(provider);
 
-      console.log("Wallet Web3 Instancia: ", web3);
+        console.log("Wallet Web3 Instancia: ", web3);
 
-      // Pega o ID da Rede
-      const chainId = await web3.eth.getChainId();
-      console.log(chainId);
+        // Pega o ID da Rede
+        const chainId = await web3.eth.getChainId();
+        console.log(chainId);
 
-      // Pega o Número do Bloco
-      const blockNumber = await web3.eth.getBlockNumber();
-      console.log(blockNumber);
+        // Pega o Número do Bloco
+        const blockNumber = await web3.eth.getBlockNumber();
+        console.log(blockNumber);
 
-      // Pega a lista de contas da Wallet
-      const accounts = await web3.eth.getAccounts();
-      web3.eth.getAccounts(console.log);
+        // Pega a lista de contas da Wallet
+        const accounts = await web3.eth.getAccounts();
+        web3.eth.getAccounts(console.log);
 
-      // Pega o JSON do contrato
-      const json = await fetch('http://localhost:9050/contracts/WVWPreSale.json')
-      const ABI = await json.json()
-      const contract = new web3.eth.Contract(ABI.abi, "0x5B4A6E00B6974AeB8Fcc15c260C2f18Dffe20127");
-      console.log('Contrato : ', contract);
+        // Pega o JSON do contrato
+        const json = await fetch('http://localhost:9050/contracts/WVWPreSale.json')
+        const ABI = await json.json()
+        const contract = new web3.eth.Contract(ABI.abi, "0x5B4A6E00B6974AeB8Fcc15c260C2f18Dffe20127");
+        console.log('Contrato : ', contract);
 
-      // Pega o Preço do Token e o Valor Gasto
-      const TokenPreco = await contract.methods.getTokenPrice().call();
-      console.log('Token Preço: ', TokenPreco.toString());
-      const ValorGasto = await contract.methods.getSpentValue(accounts[0]).call();
-      console.log('Valor Gasto: ', ValorGasto.toString());
+        // Pega o Preço do Token e o Valor Gasto
+        const TokenPreco = await contract.methods.getTokenPrice().call();
+        console.log('Token Preço: ', TokenPreco.toString());
+        const ValorGasto = await contract.methods.getSpentValue(accounts[0]).call();
+        console.log('Valor Gasto: ', ValorGasto.toString());
 
-      // Quando o botão é clicado
-      var button = document.getElementById("botao-comprar");
-      button.addEventListener("click", async function (e) {
-        button.disabled = "true";
-        // Pega valor do input 
-        const valorInput = document.getElementById('input_valor').value;
-        // Valor do Input vezes o Preço do Token
-        const ValorInputWei = valorInput * TokenPreco;
-        console.log('Valor Input vezes preço do Token em Wei: ', ValorInputWei.toString());
+        // Quando o botão é clicado
+        var button = document.getElementById("botao-comprar");
+        button.addEventListener("click", async function (e) {
+          button.disabled = "true";
+          // Pega valor do input 
+          const valorInput = document.getElementById('input_valor').value;
+          // Valor do Input vezes o Preço do Token
+          const ValorInputWei = valorInput * TokenPreco;
+          console.log('Valor Input vezes preço do Token em Wei: ', ValorInputWei.toString());
 
 
-        if (valorInput == 0) {
-          alert('Valor não pode ser 0');
-          button.disabled = false;
-          return;
-        }
+          if (valorInput == 0) {
+            alert('Valor não pode ser 0');
+            button.disabled = false;
+            return;
+          }
 
-        const ValorMaxWei = web3.utils.toWei('3', 'ether');
-        const ValorMinWei = web3.utils.toWei('0.1', 'ether');
-        const valorInputWei = web3.utils.toWei(valorInput, "ether");
+          const ValorMaxWei = web3.utils.toWei('3', 'ether');
+          const ValorMinWei = web3.utils.toWei('0.1', 'ether');
+          const valorInputWei = web3.utils.toWei(valorInput, "ether");
 
-        console.log('----------------------------------------------------');
-        console.log('Valor Input em Wei: ', valorInputWei);
-        console.log('Valor Max em Wei: ', ValorMaxWei);
-        console.log('Valor Min em Wei: ', ValorMinWei);
-        console.log('----------------------------------------------------');
+          console.log('----------------------------------------------------');
+          console.log('Valor Input em Wei: ', valorInputWei);
+          console.log('Valor Max em Wei: ', ValorMaxWei);
+          console.log('Valor Min em Wei: ', ValorMinWei);
+          console.log('----------------------------------------------------');
 
-        if (valorInputWei > ValorMaxWei) {
-          alert('Valor não pode ser maior que 3 BNB');
-          button.disabled = false;
-          return;
-        }
-        if (valorInputWei < ValorMinWei) {
-          alert('Valor não pode ser menor que 0.1 BNB');
-          button.disabled = false;
-          return;
-        }
+          if (valorInputWei > ValorMaxWei) {
+            alert('Valor não pode ser maior que 3 BNB');
+            button.disabled = false;
+            return;
+          }
+          if (valorInputWei < ValorMinWei) {
+            alert('Valor não pode ser menor que 0.1 BNB');
+            button.disabled = false;
+            return;
+          }
 
-        // call buyTokens if erro return message
-        try {
-          const teste = await contract.methods.buyTokens(ValorInputWei.toString()).send({ from: accounts[0] });
-          console.log(teste);
-        } catch (error) {
-          console.log(error.message);
-          alert(error.message);
-          button.disabled = false;
-          return;
-        }
-        //console.log(valor);
-        //const teste = await contract.methods.buyTokens(valor.toString()).call();
-        //console.log(teste.message);
-      }, false);
-      /*
-        // MetaMask does not give you all accounts, only the selected account
-        console.log("Got accounts", accounts);
-        selectedAccount = accounts[0];
-      
-        document.querySelector("#selected-account").textContent = selectedAccount;
-      
-        // Get a handl
-        const template = document.querySelector("#template-balance");
-        const accountContainer = document.querySelector("#accounts");
-      
-        // Purge UI elements any previously loaded accounts
-        accountContainer.innerHTML = '';
+          // call buyTokens if erro return message
+          try {
+            const teste = await contract.methods.buyTokens(ValorInputWei.toString()).send({ from: accounts[0] });
+            console.log(teste);
+          } catch (error) {
+            console.log(error.message);
+            alert(error.message);
+            button.disabled = false;
+            return;
+          }
+          //console.log(valor);
+          //const teste = await contract.methods.buyTokens(valor.toString()).call();
+          //console.log(teste.message);
+        }, false);
+        /*
+          // MetaMask does not give you all accounts, only the selected account
+          console.log("Got accounts", accounts);
+          selectedAccount = accounts[0];
         
-        // Go through all accounts and get their ETH balance
-        const rowResolvers = accounts.map(async (address) => {
-          const balance = await web3.eth.getBalance(address);
-          // ethBalance is a BigNumber instance
-          // https://github.com/indutny/bn.js/
-          const ethBalance = web3.utils.fromWei(balance, "ether");
-          const humanFriendlyBalance = parseFloat(ethBalance).toFixed(4);
-          // Fill in the templated row and put in the document
-          const clone = template.content.cloneNode(true);
-          clone.querySelector(".address").textContent = address;
-          clone.querySelector(".balance").textContent = humanFriendlyBalance;
-          accountContainer.appendChild(clone);
-        });
-      
-        // Because rendering account does its own RPC commucation
-        // with Ethereum node, we do not want to display any results
-        // until data for all accounts is loaded
-        await Promise.all(rowResolvers);*/
+          document.querySelector("#selected-account").textContent = selectedAccount;
+        
+          // Get a handl
+          const template = document.querySelector("#template-balance");
+          const accountContainer = document.querySelector("#accounts");
+        
+          // Purge UI elements any previously loaded accounts
+          accountContainer.innerHTML = '';
+          
+          // Go through all accounts and get their ETH balance
+          const rowResolvers = accounts.map(async (address) => {
+            const balance = await web3.eth.getBalance(address);
+            // ethBalance is a BigNumber instance
+            // https://github.com/indutny/bn.js/
+            const ethBalance = web3.utils.fromWei(balance, "ether");
+            const humanFriendlyBalance = parseFloat(ethBalance).toFixed(4);
+            // Fill in the templated row and put in the document
+            const clone = template.content.cloneNode(true);
+            clone.querySelector(".address").textContent = address;
+            clone.querySelector(".balance").textContent = humanFriendlyBalance;
+            accountContainer.appendChild(clone);
+          });
+        
+          // Because rendering account does its own RPC commucation
+          // with Ethereum node, we do not want to display any results
+          // until data for all accounts is loaded
+          await Promise.all(rowResolvers);*/
 
-      // Display fully loaded UI for wallet data
-      document.querySelector("#prepare").style.display = "none";
-      document.querySelector("#connected").style.display = "block";
+        // Display fully loaded UI for wallet data
+        document.querySelector("#prepare").style.display = "none";
+        document.querySelector("#connected").style.display = "block";
+      } catch (error) {
+        console.log(error.message);
+        alert("Verifique se a Wallet está conectada na rede correta");
+        button.disabled = false;
+        return;
+      }
     }
 
 
