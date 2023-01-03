@@ -171,12 +171,14 @@
           if (valorMax > 0) {
             console.log("Travou Valor Max");
             alert("Valor Máximo atingido");
+            button.disabled = false;
             return;
           }
 
           if (valorMin < 0) {
             console.log("Travou Valor Min");
             alert("Valor Mínimo não atingido");
+            button.disabled = false;
             return;
           }
 
@@ -190,7 +192,10 @@
           // call buyTokens if erro return message
           try {
             const teste = await contract.methods.buyTokens(valorInput).send({ from: accounts[0], value: testBigN2.toString() });
+            //const teste = await contract.methods.buyTokens(200000).send({ from: accounts[0], value: 200000 * 5000000000000 });
             console.log(teste);
+            alert("Tokens comprados com sucesso.");
+            button.disabled = false;
           } catch (error) {
             console.log(error.message);
             alert(error.message);
