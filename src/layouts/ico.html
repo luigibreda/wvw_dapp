@@ -133,7 +133,8 @@
         // Quando o botão é clicado
         var button = document.getElementById("botao-comprar");
         button.addEventListener("click", async function (e) {
-          button.disabled = "true";
+          button.disabled = true;
+          document.getElementById('botaoComprar').innerHTML = 'Carregando...';
           // Pega valor do input 
           const valorInput = document.getElementById('input_valor').value;
           // Valor do Input vezes o Preço do Token
@@ -149,6 +150,7 @@
           if (valorInput == 0) {
             alert('Valor não pode ser 0');
             button.disabled = false;
+            document.getElementById('botaoComprar').innerHTML = 'Comprar';
             return;
           }
 
@@ -175,6 +177,7 @@
             console.log("Travou Valor Max");
             alert("Valor Máximo atingido");
             button.disabled = false;
+            document.getElementById('botaoComprar').innerHTML = 'Comprar';
             return;
           }
 
@@ -182,6 +185,7 @@
             console.log("Travou Valor Min");
             alert("Valor Mínimo não atingido");
             button.disabled = false;
+            document.getElementById('botaoComprar').innerHTML = 'Comprar';
             return;
           }
 
@@ -198,10 +202,12 @@
             console.log(teste);
             alert("Tokens comprados com sucesso.");
             button.disabled = false;
+            document.getElementById('botaoComprar').innerHTML = 'Comprar';
           } catch (error) {
             console.log(error.message);
             alert(error.message);
             button.disabled = false;
+            document.getElementById('botaoComprar').innerHTML = 'Comprar';
             return;
           }
 
@@ -214,6 +220,7 @@
         console.log(error.message);
         alert("Verifique se a Wallet está conectada na rede correta");
         button.disabled = false;
+        document.getElementById('botaoComprar').innerHTML = 'Comprar'; 
         return;
       }
     }
