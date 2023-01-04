@@ -148,7 +148,7 @@
 
 
           if (valorInput == 0) {
-            alert('Valor não pode ser 0');
+            alert('Valor não pode ser 0 WVW');
             button.disabled = false;
             document.getElementById('botaoComprar').innerHTML = 'Comprar';
             return;
@@ -205,7 +205,7 @@
             document.getElementById('botaoComprar').innerHTML = 'Comprar';
           } catch (error) {
             console.log(error.message);
-            alert(error.message);
+            alert("Algo deu errado, recarregue a página e tente novamente.");
             button.disabled = false;
             document.getElementById('botaoComprar').innerHTML = 'Comprar';
             return;
