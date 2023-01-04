@@ -185,14 +185,13 @@
           const testBigN = 10000 * 5000000000000;
           console.log("1", testBigN);
 
-          const testBigN2 = web3.utils.BN(10000).mul(web3.utils.BN(5000000000000));
+          const testBigN2 = web3.utils.BN(valorInput).mul(web3.utils.BN(TokenPreco));
           console.log(testBigN2.toString());
           console.log(valorInput);
 
-          // call buyTokens if erro return message
           try {
             const teste = await contract.methods.buyTokens(valorInput).send({ from: accounts[0], value: testBigN2.toString() });
-            //const teste = await contract.methods.buyTokens(200000).send({ from: accounts[0], value: 200000 * 5000000000000 });
+            //const teste = await contract.methods.buyTokens(200).send({ from: accounts[0], value: 200 * 5000000000000 });
             console.log(teste);
             alert("Tokens comprados com sucesso.");
             button.disabled = false;
@@ -202,42 +201,8 @@
             button.disabled = false;
             return;
           }
-          //console.log(valor);
-          //const teste = await contract.methods.buyTokens(valor.toString()).call();
-          //console.log(teste.message);
+
         }, false);
-        /*
-          // MetaMask does not give you all accounts, only the selected account
-          console.log("Got accounts", accounts);
-          selectedAccount = accounts[0];
-        
-          document.querySelector("#selected-account").textContent = selectedAccount;
-        
-          // Get a handl
-          const template = document.querySelector("#template-balance");
-          const accountContainer = document.querySelector("#accounts");
-        
-          // Purge UI elements any previously loaded accounts
-          accountContainer.innerHTML = '';
-          
-          // Go through all accounts and get their ETH balance
-          const rowResolvers = accounts.map(async (address) => {
-            const balance = await web3.eth.getBalance(address);
-            // ethBalance is a BigNumber instance
-            // https://github.com/indutny/bn.js/
-            const ethBalance = web3.utils.fromWei(balance, "ether");
-            const humanFriendlyBalance = parseFloat(ethBalance).toFixed(4);
-            // Fill in the templated row and put in the document
-            const clone = template.content.cloneNode(true);
-            clone.querySelector(".address").textContent = address;
-            clone.querySelector(".balance").textContent = humanFriendlyBalance;
-            accountContainer.appendChild(clone);
-          });
-        
-          // Because rendering account does its own RPC commucation
-          // with Ethereum node, we do not want to display any results
-          // until data for all accounts is loaded
-          await Promise.all(rowResolvers);*/
 
         // Display fully loaded UI for wallet data
         document.querySelector("#prepare").style.display = "none";
