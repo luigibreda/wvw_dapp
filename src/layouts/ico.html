@@ -126,6 +126,9 @@
         const TokenPreco = await contract.methods.getTokenPrice().call();
         console.log('Token Preço: ', TokenPreco.toString());
 
+        const WVWComprados = await contract.methods.getSpentValue(accounts[0]).call();
+        const WVWCompradosEther = web3.utils.fromWei(WVWComprados, 'ether');
+        document.getElementById('WVWComprados').innerHTML = WVWCompradosEther.toString();
 
         // Quando o botão é clicado
         var button = document.getElementById("botao-comprar");
@@ -150,7 +153,7 @@
           }
 
           const ValorGasto = await contract.methods.getSpentValue(accounts[0]).call();
-          //console.log('Valor Gasto: ', ValorGasto.toString());
+          console.log('Valor Gasto: ', ValorGasto.toString());
 
           const getMinWei = await contract.methods.getMinWei().call();
           console.log('getMinWei: ', getMinWei.toString());
