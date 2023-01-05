@@ -119,7 +119,7 @@
         // Pega o JSON do contrato
         const json = await fetch('https://wvwcoin.com/contracts/WVWPreSale.json')
         const ABI = await json.json()
-        const contract = new web3.eth.Contract(ABI.abi, "0xaFd4F7267A0B0777000e5e677E469f8e6f552BFe");
+        const contract = new web3.eth.Contract(ABI.abi, "0xC1De577709Ce809F733b6A994c0D100836cbC97F");
         console.log('Contrato : ', contract);
 
         // Pega o Preço do Token e o Valor Gasto
