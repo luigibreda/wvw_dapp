@@ -1,0 +1,514 @@
+  <section class="section is-medium has-big-dark-gradient">
+    <!-- Container -->
+    <div class="container">
+      <!-- Divider -->
+      <div class="divider is-centered"></div>
+      <!-- Title & subtitle -->
+      <h2 class="title is-light is-semibold has-text-centered is-spaced">
+        Nosso Time
+      </h2>
+      <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+        Mais do que colaboradores, esse grupo de pessoas deve ser considerado como “agentes da transformação” pois estão trabalhando cuidadosamente pra promover uma experiência incrível e um relacionamento de longo prazo com os usuários.
+      </h4>
+
+      <!-- Content wrapper -->
+      <div class="content-wrapper is-large">
+        <div class="columns is-vcentered">
+          <div class="column is-hidden-mobile"></div>
+
+          <!-- Team member -->
+          <div class="column is-3">
+            <div class="team-member-container">
+              <!-- Card -->
+              <div class="dark-card">
+                <!-- Avatar wrapper -->
+                <div class="avatar">
+                  <!-- Svg circle -->
+                  <svg
+                    class="circle-chart"
+                    viewbox="0 0 33.83098862 33.83098862"
+                    width="140"
+                    height="140"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Track -->
+                    <circle
+                      class="circle-chart-background"
+                      stroke-width="1"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    />
+                    <!-- Stroke -->
+                    <circle
+                      class="circle-chart-circle"
+                      stroke-width="1"
+                      stroke-dasharray="33,100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    />
+                  </svg>
+                  <!-- Sketeched face -->
+                  <img class="is-sketch" src="/img/team/mike.svg" alt="" />
+                  <!-- Real face -->
+                  <img class="is-real" src="/img/team/tarek.png" alt="" />
+                </div>
+                <!-- Member meta -->
+                <div class="member-info">
+                  <h4 class="title is-light is-6 is-tight">Tarek El Laden</h4>
+                  <div class="position">Founder / Ceo</div>
+                  <p class="description">
+                    Entusiasta de Critpomoedas, empresário e investidor, reside atualmente em Nova Iorque e investe em grandes projetos cripto ao redor do mundo.  Ele é conhecido por sua atenção aos detalhes e pelo seu compromisso em entregar projetos de alta qualidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team member -->
+          <div class="column is-3">
+            <div class="team-member-container">
+              <!-- Card -->
+              <div class="dark-card">
+                <!-- Avatar wrapper -->
+                <div class="avatar">
+                  <!-- Svg circle -->
+                  <svg
+                    class="circle-chart"
+                    viewbox="0 0 33.83098862 33.83098862"
+                    width="140"
+                    height="140"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Track -->
+                    <circle
+                      class="circle-chart-background"
+                      stroke-width="1"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    />
+                    <!-- Stroke -->
+                    <circle
+                      class="circle-chart-circle"
+                      stroke-width="1"
+                      stroke-dasharray="33,100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    />
+                  </svg>
+                  <!-- Sketeched face -->
+                  <img class="is-sketch" src="/img/team/mike.svg" alt="" />
+                  <!-- Real face -->
+                  <img class="is-real" src="https://avatars.githubusercontent.com/u/101072609?v=4" alt="" />
+                </div>
+                <!-- Member meta -->
+                <div class="member-info">
+                  <h4 class="title is-light is-6 is-tight">Luigi Breda</h4>
+                  <div class="position">Developer</div>
+                  <p class="description">
+                    Luigi Breda é um experiente desenvolvedor de software com mais de 10 anos de experiência. Ele é especializado em desenvolvimento de aplicações web e mobile e tem uma paixão por resolver problemas complexos. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team member -->
+          <div class="column is-3">
+            <div class="team-member-container">
+              <!-- Card -->
+              <div class="dark-card">
+                <!-- Avatar wrapper -->
+                <div class="avatar">
+                  <!-- Svg circle -->
+                  <svg
+                    class="circle-chart"
+                    viewbox="0 0 33.83098862 33.83098862"
+                    width="140"
+                    height="140"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Track -->
+                    <circle
+                      class="circle-chart-background"
+                      stroke-width="1"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    />
+                    <!-- Stroke -->
+                    <circle
+                      class="circle-chart-circle"
+                      stroke-width="1"
+                      stroke-dasharray="33,100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    />
+                  </svg>
+                  <!-- Sketeched face -->
+                  <img class="is-sketch" src="/img/team/mike.svg" alt="" />
+                  <!-- Real face -->
+                  <img class="is-real" src="/img/yuri.png" alt="" />
+                </div>
+                <!-- Member meta -->
+                <div class="member-info">
+                  <h4 class="title is-light is-6 is-tight">Yuri</h4>
+                  <div class="position">Gestor de Projeto</div>
+                  <p class="description">
+                    Yuri é um experiente gestor de projetos com mais de 10 anos de experiência na indústria de tecnologia. Ele é responsável por gerenciar o desenvolvimento e entrega de projetos complexos para nossos clientes no Brasil. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="column is-hidden-mobile"></div>
+        </div>
+
+        <!-- Spaced divider -->
+        <div class="divider is-centered is-spacer"></div>
+        <!-- Title & subtitle -->
+        <h2 class="title is-light is-semibold has-text-centered is-spaced">
+          Canais ativos na plataforma
+        </h2>
+        <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+          Canais cujo as comunidades estão sendo remuneradas para interagir com o seu conteúdo.
+        </h4>
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper is-large">
+          <div class="columns is-vcentered is-multiline">
+            <!-- Advisor -->
+            <div class="column is-one-fifth">
+              <div class="advisor-container has-text-centered">
+                <!-- Picture -->
+                <div class="photo">
+                  <img
+                    src="/img/yt-logo.jpg"
+                    alt=""
+                    data-aos="fade-down"
+                    data-aos-delay="100"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-out-quart"
+                  />
+                </div>
+                <!-- Meta -->
+                <div class="info">
+                  <div class="subtitle is-6 is-light is-compressed">
+                    Watch Videos & Win
+                  </div>
+                  <div class="position">Parceiro do Youtube</div>
+                </div>
+              </div>
+            </div>
+            <!-- Advisor -->
+            <div class="column is-one-fifth">
+              <div class="advisor-container has-text-centered">
+                <!-- Picture -->
+                <div class="photo">
+                  <img
+                    src="/img/yt-logo.jpg"
+                    alt=""
+                    data-aos="fade-down"
+                    data-aos-delay="100"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-out-quart"
+                  />
+                </div>
+                <!-- Meta -->
+                <div class="info">
+                  <div class="subtitle is-6 is-light is-compressed">
+                    Watch Videos & Win
+                  </div>
+                  <div class="position">Parceiro do Youtube</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Advisor -->
+            <div class="column is-one-fifth">
+              <div class="advisor-container has-text-centered">
+                <!-- Picture -->
+                <div class="photo">
+                  <img
+                    src="/img/yt-logo.jpg"
+                    alt=""
+                    data-aos="fade-down"
+                    data-aos-delay="100"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-out-quart"
+                  />
+                </div>
+                <!-- Meta -->
+                <div class="info">
+                  <div class="subtitle is-6 is-light is-compressed">
+                    Watch Videos & Win
+                  </div>
+                  <div class="position">Parceiro do Youtube</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Advisor -->
+            <div class="column is-one-fifth">
+              <div class="advisor-container has-text-centered">
+                <!-- Picture -->
+                <div class="photo">
+                  <img
+                    src="/img/yt-logo.jpg"
+                    alt=""
+                    data-aos="fade-down"
+                    data-aos-delay="100"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-out-quart"
+                  />
+                </div>
+                <!-- Meta -->
+                <div class="info">
+                  <div class="subtitle is-6 is-light is-compressed">
+                    Watch Videos & Win
+                  </div>
+                  <div class="position">Parceiro do Youtube</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Advisor -->
+            <div class="column is-one-fifth">
+              <div class="advisor-container has-text-centered">
+                <!-- Picture -->
+                <div class="photo">
+                  <img
+                    src="/img/yt-logo.jpg"
+                    alt=""
+                    data-aos="fade-down"
+                    data-aos-delay="100"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-out-quart"
+                  />
+                </div>
+                <!-- Meta -->
+                <div class="info">
+                  <div class="subtitle is-6 is-light is-compressed">
+                    Watch Videos & Win
+                  </div>
+                  <div class="position">Parceiro do Youtube</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Content wrapper -->
+
+        <!-- Spaced divider -->
+        <div class="divider is-centered is-spacer"></div>
+        <!-- Title & subtitle -->
+        <h2 class="title is-light is-semibold has-text-centered is-spaced">
+          FAQ - Perguntas Frequentes
+        </h2>
+        <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+          Ainda com dúvidas? Não se preocupe, nos iremos te auxiliar do início ao fim da experiência.
+        </h4>
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper is-large">
+          <div class="columns">
+            <div class="column is-5 is-offset-1">
+              <!-- Accordion -->
+              <div class="accordion">
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle1"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle1">
+                    O que é a Blockchain ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      A blockchain é um registro distribuído e seguro de transações. É uma lista contínua de registros, chamados de blocos, que são ligados e seguros usando criptografia. Cada bloco contém um registro de transações recentes e um ponto de referência para o bloco anterior, formando uma cadeia. Isso torna a blockchain imutável, ou seja, uma vez que os dados são adicionados a um bloco, eles não podem ser alterados.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle2"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle2">
+                    O que é uma pre-sale ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      Uma pre-sale é uma venda antecipada de produtos ou serviços que ainda não estão disponíveis para o público em geral. É comum em empresas de tecnologia que estão desenvolvendo um novo produto e querem levantar fundos para sua finalização e lançamento.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle3"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle3">
+                    O que é um whitepapper ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      Um whitepaper é um documento que apresenta uma solução para um problema técnico ou de negócios. Eles são geralmente usados para promover produtos ou serviços, mas também podem ser usados para apresentar uma ideia ou uma estratégia de maneira mais formal.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle4"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle4">
+                    O que é a WVW ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      Se você já assiste vídeos na internet mesmo sem receber nada pra isso, essa é a sua chance de fazer uma renda extra! Receba $WVW por engajar com seus conteúdos favoritos, concorra a prêmios exclusivos toda semana, e além de tudo isso, essa pode ser a sua chance de criar seu próprio canal bem sucedido!
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle5"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle5">
+                    Quando vai ser lançado ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      Vai ser lançado dia 11 de Janeiro de 2023.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /Accordion -->
+            </div>
+
+            <div class="column is-5">
+              <!-- Accordion -->
+              <div class="accordion">
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle6"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle6">
+                    Quantos Tokens serão vendidos ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      Na pre-sale serão vendidos 10 milhões de Tokens.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle7"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle7">
+                    O que acontece se o valor não for atingido? ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      Se o valor não for atingido os idealizadores do projeto irão investir o necessário para a compra dos Tokens restantes.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle8"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle8">
+                    O que acontece depois ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      Após isso, o Token será lançado na PancakeSwap e o projeto será lançado.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle9"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle9">
+                    Como será a distribuição do token ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      Será que acordo com a Tokenomics do projeto. Está na página Token.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Option -->
+                <div class="accordion-option">
+                  <input
+                    type="checkbox"
+                    id="toggle10"
+                    class="accordion-toggle"
+                  />
+                  <label class="accordion-title" for="toggle10">
+                    Qual as recompensas ?
+                  </label>
+                  <div class="accordion-content">
+                    <p>
+                      As recompensas serão pagas em WVW após o usuários assistir os vídeos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /Accordion -->
+            </div>
+          </div>
+        </div>
+        <!-- /Content wrapper -->
+</div></div></section>
