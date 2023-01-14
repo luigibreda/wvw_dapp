@@ -4,113 +4,132 @@ title: Token
 ---
 
 <div class="token-wrapper">
-    <!-- Landing page Hero -->
-    <section class="hero is-medium">
-        <div class="hero-head">
+  <!-- Landing page Hero -->
+  <section class="hero is-medium">
+    <div class="hero-head">
+      <!-- Cloned navbar -->
+      {{> navbar-clone}}
 
-            <!-- Cloned navbar -->
-            {{> navbar-clone}}
+      <!-- Static navbar -->
+      {{> navbar}}
+    </div>
 
-            <!-- Static navbar -->
-            {{> navbar}}
+    <div class="hero-body has-text-centered">
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="token-image">
+            <img
+              style="margin-top: -125px !important; height: 100%"
+              src="/img/tokenheader.png"
+            />
+          </div>
+          <h1 class="title is-2 is-light is-semibold is-spaced main-title"></h1>
+          <h2 class="subtitle is-5 is-light is-thin">
+            A nova geração de tokens com economias sólidas e sustentáveis!
+          </h2>
+          <!-- CTA -->
+          <p>
+            <a
+              href="../fonts/whitepapper.pdf"
+              class="button k-button k-primary raised has-gradient is-fat is-bold"
+            >
+              <span class="text">Whitepaper</span>
+              <span class="front-gradient"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section is-medium">
+    <div class="container">
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+        <div class="columns is-vcentered">
+          <!-- Feature content -->
+          <div class="column is-5 is-offset-1">
+            <div class="side-feature-content">
+              <h3 class="title is-4 is-light">LASTRO NO MUNDO REAL</h3>
+              <div class="divider"></div>
+              <p class="is-light">
+                São várias as formas de monetização de um canal do YouTube,
+                incluindo anúncios, patrocinadores, canal de membros,
+                infoprodutos e etc. Parte dessa receita, é injetada diretamente
+                na pool de liquidez do WVW Token, que só crescerá com o tempo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature image -->
+          <div class="column is-7">
+            <img
+              class="side-feature"
+              src="/img/icons/mundorealnew.png"
+              alt=""
+            />
+          </div>
         </div>
 
-        <div class="hero-body has-text-centered">
+        <div class="columns is-vcentered">
+          <!-- Feature image -->
+          <div class="column is-7">
+            <img
+              class="side-feature"
+              src="/img/icons/sistemadeflacionario.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Feature content -->
+          <div class="column is-5">
+            <div class="side-feature-content">
+              <h3 class="title is-4 is-light">SISTEMA DEFLACIONÁRIO</h3>
+              <div class="divider"></div>
+              <p class="is-light">
+                A cada produto consumido na plataforma WVW, uma porcentagem da
+                venda é também devolvida a própria comunidade, em forma de
+                recompensa, e uma outra parte, é queimada promovendo uma
+                deflação na economia do token.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-vcentered">
+          <!-- Feature content -->
+          <div class="column is-5 is-offset-1">
+            <div class="side-feature-content">
+              <h3 class="title is-4 is-light">ATIVO PRO LONGO PRAZO</h3>
+              <div class="divider"></div>
+              <p class="is-light">
+                Com uma comunidade engajada, métodos eficientes de KPI, economia
+                sólida, um sistema ganha ganha entre comunidade e os youtubers,
+                o protocolo WVW foi desenhado para ser rentável e sustentável no
+                curto e no longo prazo!
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature image -->
+          <div class="column is-7">
+            <img class="side-feature" src="/img/icons/longoprazo.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Spaced divider -->
+      <div class="token-documentation">
+        <div class="documentation-title">Whitepaper</div>
+        <div class="columns is-vcentered">
+          <div class="column is-5">
             <div class="columns">
-                <div class="column is-6 is-offset-3">
-                    <div class="token-image">
-                        <img style="margin-top: -125px !important; height: 100%;" src="/img/tokenheader.png">
-                    </div>
-                    <h1 class="title is-2 is-light is-semibold is-spaced main-title"></h1>
-                    <h2 class="subtitle is-5 is-light is-thin">
-                        A nova geração de tokens com economias sólidas e sustentáveis!
-                    </h2>
-                    <!-- CTA -->
-                    <p>
-                        <a href="start" class="button k-button k-primary raised has-gradient is-fat is-bold">
-                            <span class="text">Whitepaper</span>
-                            <span class="front-gradient"></span>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section is-medium">
-        <div class="container">
-
-            <!-- Content wrapper -->
-            <div class="content-wrapper">
-
-                <div class="columns is-vcentered">
-                    <!-- Feature content -->
-                    <div class="column is-5 is-offset-1">
-                        <div class="side-feature-content">
-
-                            <h3 class="title is-4 is-light">LASTRO NO MUNDO REAL</h3>
-                            <div class="divider"></div>
-                            <p class="is-light">São várias as formas de monetização de um canal do YouTube, incluindo anúncios, patrocinadores, canal de membros, infoprodutos e etc. Parte dessa receita, é injetada diretamente na pool de liquidez do WVW Token, que só crescerá com o tempo.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature image -->
-                    <div class="column is-7">
-                        <img class="side-feature" src="/img/icons/mundorealnew.png" alt="">
-                    </div>
-                </div>
-
-                <div class="columns is-vcentered">
-                    <!-- Feature image -->
-                    <div class="column is-7">
-                        <img class="side-feature" src="/img/icons/sistemadeflacionario.png" alt="">
-                    </div>
-
-                    <!-- Feature content -->
-                    <div class="column is-5">
-                        <div class="side-feature-content">
-
-                            <h3 class="title is-4 is-light">SISTEMA DEFLACIONÁRIO </h3>
-                            <div class="divider"></div>
-                            <p class="is-light">A cada produto consumido na plataforma WVW, uma porcentagem da venda é também devolvida a própria comunidade, em forma de recompensa, e uma outra parte, é queimada promovendo uma deflação na economia do token.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="columns is-vcentered">
-                    <!-- Feature content -->
-                    <div class="column is-5 is-offset-1">
-                        <div class="side-feature-content">
-
-                            <h3 class="title is-4 is-light">ATIVO PRO LONGO PRAZO</h3>
-                            <div class="divider"></div>
-                            <p class="is-light">Com uma comunidade engajada, métodos eficientes de KPI, economia sólida, um sistema ganha ganha entre comunidade e os youtubers, o protocolo  WVW foi desenhado para ser rentável e sustentável no curto e no longo prazo!</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature image -->
-                    <div class="column is-7">
-                        <img class="side-feature" src="/img/icons/longoprazo.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Spaced divider -->
-            <div class="token-documentation">
-                <div class="documentation-title">
-                    Whitepaper
-                </div>
-                <div class="columns is-vcentered">
-                    <div class="column is-5">
-                        <div class="columns">
-                            <div class="column is-6">
-                                <ul>
-                                    <li class="is-active">English</li>
-                                    <li>Portugues</li>
-                                </ul>
-                            </div>
-                           0<!-- <div class="column is-6">
+              <div class="column is-6">
+                <ul>
+                  <li class="is-active">Portugues</li>
+                </ul>
+              </div>
+              <!-- <div class="column is-6">
                                 <ul>
                                     <li>العربية</li>
                                     <li>русский</li>
@@ -118,122 +137,126 @@ title: Token
                                     <li>日本語</li>
                                 </ul>
                             </div>-->
-                        </div>
-
-                    </div>
-                    <div class="column is-7">
-                        <div class="columns is-vcentered has-text-centered">
-                            
-                            <div class="column is-4">
-                                <div class="document-block has-text-centered">
-                                    <img src="/img/icons/whitepaper.svg">
-                                    <a href="token.html" class="button k-button k-primary raised has-gradient is-bold">
-                                        <span class="text">Whitepaper</span>
-                                        <span class="front-gradient"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-
-            <!-- Spaced divider -->
-            <div class="divider is-centered is-spacer"></div>
-            <!-- Title & subtitle -->
-            <h2 class="title is-light is-semibold has-text-centered is-spaced">Compre com 20% OFF</h2>
-
-            <!-- Content wrapper -->
-            <div class="content-wrapper">
-
-                <div class="columns is-ico-details">
-                    <div class="column is-4">
-                        <div class="details-title">Pre-sale</div>
-                        <ul>
-                            <li>Tokens para venda: 10 000 000</li>
-                            <li>Token: WVW</li>
-                            <li>Token preço: 0,000005 BNB </li>
-                            <li>Auditável: Sim</li>
-                        </ul>
-                    </div>
-                    <div class="column is-4">
-                        <div class="details-title">Compre WVW</div>
-                        <ul>
-                            <li>Min: 0.1 BNB</li>
-                            <li>Max: 3 BNB</li>
-                            <li>Preço: 200 000 WVW = 1 BNB</li>
-                        </ul>
-                        <div class="details-title">Período Pre Sale</div>
-                        <ul>
-                            <li>Começa 11/01/2023</li>
-                            <li>Termína em 20/01/2023</li>
-                            <li>20% OFF</li>
-                        </ul>
-                    </div>
-                    <div class="column is-4">
-                        <div class="details-title">Token WVW</div>
-                        <ul>
-                            <li>Lançamento Pancakeswap: Jan 23 (20h UTC)</li>
-                            <li>Token: WVW</li>
-                        </ul>
-                    </div>
+          </div>
+          <div class="column is-7">
+            <div class="columns is-vcentered has-text-centered">
+              <div class="column is-4">
+                <div class="document-block has-text-centered">
+                  <img src="/img/icons/whitepaper.svg" />
+                  <a
+                    href="../fonts/whitepapper.pdf"
+                    class="button k-button k-primary raised has-gradient is-bold"
+                  >
+                    <span class="text">Whitepaper</span>
+                    <span class="front-gradient"></span>
+                  </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <div class="columns is-vcentered has-text-centered">
-                    <!-- ICO repartition -->
-                    <div class="column is-6 is-offset-3">
-                        <!-- Diagram -->
-                        <img class="ico-repartition" src="/img/illustrations/ico-shares.svg">
-                        <!-- Legend block -->
-                        <div class="repartition-details">
-                            <!-- Legend item -->
-                            <div class="repartition-block">
-                                <div class="color-dot is-reward"></div>
-                                <div class="share-title">Team Locked</div>
-                                <div class="percentage">10%</div>
-                            </div>
-                            <!-- Legend item -->
-                            <div class="repartition-block">
-                                <div class="color-dot is-presale"></div>
-                                <div class="share-title">Partners and Promotions</div>
-                                <div class="percentage">10%</div>
-                            </div>
-                            <!-- Legend item -->
-                            <div class="repartition-block">
-                                <div class="color-dot is-sale"></div>
-                                <div class="share-title">Giveways Locked</div>
-                                <div class="percentage">10%</div>
-                            </div>
-                            <!-- Legend item -->
-                            <div class="repartition-block">
-                                <div class="color-dot is-sale"></div>
-                                <div class="share-title">Exchanges</div>
-                                <div class="percentage">20%</div>
-                            </div>
-                            <!-- Legend item -->
-                            <div class="repartition-block">
-                                <div class="color-dot is-reward"></div>
-                                <div class="share-title">Lançamento</div>
-                                <div class="percentage">30%</div>
-                            </div>
-                            <!-- Legend item -->
-                            <div class="repartition-block">
-                                <div class="color-dot is-reward"></div>
-                                <div class="share-title">Pre-sale</div>
-                                <div class="percentage">10%</div>
-                            </div>
-                            <!-- Legend item -->
-                            <div class="repartition-block">
-                                <div class="color-dot is-reward"></div>
-                                <div class="share-title">Founder Team</div>
-                                <div class="percentage">10%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Spaced divider -->
+      <div class="divider is-centered is-spacer"></div>
+      <!-- Title & subtitle -->
+      <h2 class="title is-light is-semibold has-text-centered is-spaced">
+        Compre com 20% OFF
+      </h2>
 
-                <!-- CTA 
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+        <div class="columns is-ico-details">
+          <div class="column is-4">
+            <div class="details-title">Pre-sale</div>
+            <ul>
+              <li>Tokens para venda: 10 000 000</li>
+              <li>Token: WVW</li>
+              <li>Token preço: 0,000005 BNB</li>
+              <li>Auditável: Sim</li>
+            </ul>
+          </div>
+          <div class="column is-4">
+            <div class="details-title">Compre WVW</div>
+            <ul>
+              <li>Min: 0.1 BNB</li>
+              <li>Max: 3 BNB</li>
+              <li>Preço: 200 000 WVW = 1 BNB</li>
+            </ul>
+            <div class="details-title">Período Pre Sale</div>
+            <ul>
+              <li>Começa 21/01/2023</li>
+              <li>Termína em 23/01/2023</li>
+              <li>HARD CAP 50 BNB</li>
+            </ul>
+          </div>
+          <div class="column is-4">
+            <div class="details-title">Token WVW</div>
+            <ul>
+              <li>Lançamento Pancakeswap: Jan 23 (20h UTC)</li>
+              <li>Token: WVW</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="columns is-vcentered has-text-centered">
+          <!-- ICO repartition -->
+          <div class="column is-6 is-offset-3">
+            <!-- Diagram -->
+            <img
+              class="ico-repartition"
+              src="/img/illustrations/ico-shares.svg"
+            />
+            <!-- Legend block -->
+            <div class="repartition-details">
+              <!-- Legend item -->
+              <div class="repartition-block">
+                <div class="color-dot is-reward"></div>
+                <div class="share-title">Team Locked</div>
+                <div class="percentage">10%</div>
+              </div>
+              <!-- Legend item -->
+              <div class="repartition-block">
+                <div class="color-dot is-presale"></div>
+                <div class="share-title">Partners and Promotions</div>
+                <div class="percentage">10%</div>
+              </div>
+              <!-- Legend item -->
+              <div class="repartition-block">
+                <div class="color-dot is-sale"></div>
+                <div class="share-title">Giveways Locked</div>
+                <div class="percentage">10%</div>
+              </div>
+              <!-- Legend item -->
+              <div class="repartition-block">
+                <div class="color-dot is-sale"></div>
+                <div class="share-title">Exchanges</div>
+                <div class="percentage">20%</div>
+              </div>
+              <!-- Legend item -->
+              <div class="repartition-block">
+                <div class="color-dot is-reward"></div>
+                <div class="share-title">Lançamento</div>
+                <div class="percentage">30%</div>
+              </div>
+              <!-- Legend item -->
+              <div class="repartition-block">
+                <div class="color-dot is-reward"></div>
+                <div class="share-title">Pre-sale</div>
+                <div class="percentage">10%</div>
+              </div>
+              <!-- Legend item -->
+              <div class="repartition-block">
+                <div class="color-dot is-reward"></div>
+                <div class="share-title">Founder Team</div>
+                <div class="percentage">10%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA 
                 <div class="cta-wrapper has-text-centered">
                     <a href="start" class="button k-button k-primary raised has-gradient is-fat is-bold">
                         <span class="text">Join the ICO</span>
@@ -246,207 +269,188 @@ title: Token
                     <i class="cf cf-etc"></i>
                     <i class="cf cf-ltc"></i>
                 </div>-->
-            </div>
-            <!-- /Content wrapper -->
+      </div>
+      <!-- /Content wrapper -->
 
-        <!-- Spaced divider -->
-        <div class="divider is-centered is-spacer"></div>
-        <!-- Title & subtitle -->
-        <h2 class="title is-light is-semibold has-text-centered is-spaced">
-          FAQ - Perguntas Frequentes
-        </h2>
-        <h4 class="subtitle is-6 is-light has-text-centered is-compact">
-          Ainda com dúvidas? Não se preocupe, nos iremos te auxiliar do início ao fim da experiência.
-        </h4>
+      <!-- Spaced divider -->
+      <div class="divider is-centered is-spacer"></div>
+      <!-- Title & subtitle -->
+      <h2 class="title is-light is-semibold has-text-centered is-spaced">
+        FAQ - Perguntas Frequentes
+      </h2>
+      <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+        Ainda com dúvidas? Não se preocupe, nos iremos te auxiliar do início ao
+        fim da experiência.
+      </h4>
 
-        <!-- Content wrapper -->
-        <!-- Content wrapper -->
-        <div class="content-wrapper is-large">
-          <div class="columns">
-            <div class="column is-5 is-offset-1">
-              <!-- Accordion -->
-              <div class="accordion">
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle1"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle1">
-                    O que é a Blockchain ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      A blockchain é um registro distribuído e seguro de transações. É uma lista contínua de registros, chamados de blocos, que são ligados e seguros usando criptografia. Cada bloco contém um registro de transações recentes e um ponto de referência para o bloco anterior, formando uma cadeia. Isso torna a blockchain imutável, ou seja, uma vez que os dados são adicionados a um bloco, eles não podem ser alterados.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle2"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle2">
-                    O que é uma pre-sale ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      Uma pre-sale é uma venda antecipada de produtos ou serviços que ainda não estão disponíveis para o público em geral. É comum em empresas de tecnologia que estão desenvolvendo um novo produto e querem levantar fundos para sua finalização e lançamento.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle3"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle3">
-                    O que é um whitepapper ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      Um whitepaper é um documento que apresenta uma solução para um problema técnico ou de negócios. Eles são geralmente usados para promover produtos ou serviços, mas também podem ser usados para apresentar uma ideia ou uma estratégia de maneira mais formal.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle4"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle4">
-                    O que é a WVW ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      Se você já assiste vídeos na internet mesmo sem receber nada pra isso, essa é a sua chance de fazer uma renda extra! Receba $WVW por engajar com seus conteúdos favoritos, concorra a prêmios exclusivos toda semana, e além de tudo isso, essa pode ser a sua chance de criar seu próprio canal bem sucedido!
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle5"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle5">
-                    Quando vai ser lançado ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      Vai ser lançado dia 11 de Janeiro de 2023.
-                    </p>
-                  </div>
+      <!-- Content wrapper -->
+      <!-- Content wrapper -->
+      <div class="content-wrapper is-large">
+        <div class="columns">
+          <div class="column is-5 is-offset-1">
+            <!-- Accordion -->
+            <div class="accordion">
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle1" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle1">
+                  O que é a Blockchain ?
+                </label>
+                <div class="accordion-content">
+                  <p>
+                    A blockchain é um registro distribuído e seguro de
+                    transações. É uma lista contínua de registros, chamados de
+                    blocos, que são ligados e seguros usando criptografia. Cada
+                    bloco contém um registro de transações recentes e um ponto
+                    de referência para o bloco anterior, formando uma cadeia.
+                    Isso torna a blockchain imutável, ou seja, uma vez que os
+                    dados são adicionados a um bloco, eles não podem ser
+                    alterados.
+                  </p>
                 </div>
               </div>
-              <!-- /Accordion -->
-            </div>
 
-            <div class="column is-5">
-              <!-- Accordion -->
-              <div class="accordion">
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle6"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle6">
-                    Quantos Tokens serão vendidos ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      Na pre-sale serão vendidos 10 milhões de Tokens.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle7"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle7">
-                    O que acontece se o valor não for atingido? ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      Se o valor não for atingido os idealizadores do projeto irão investir o necessário para a compra dos Tokens restantes.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle8"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle8">
-                    O que acontece depois ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      Após isso, o Token será lançado na PancakeSwap e o projeto será lançado.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle9"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle9">
-                    Como será a distribuição do token ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      Será que acordo com a Tokenomics do projeto. Está na página Token.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Option -->
-                <div class="accordion-option">
-                  <input
-                    type="checkbox"
-                    id="toggle10"
-                    class="accordion-toggle"
-                  />
-                  <label class="accordion-title" for="toggle10">
-                    Qual as recompensas ?
-                  </label>
-                  <div class="accordion-content">
-                    <p>
-                      As recompensas serão pagas em WVW após o usuários assistir os vídeos.
-                    </p>
-                  </div>
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle2" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle2">
+                  O que é uma pre-sale ?
+                </label>
+                <div class="accordion-content">
+                  <p>
+                    Uma pre-sale é uma venda antecipada de produtos ou serviços
+                    que ainda não estão disponíveis para o público em geral. É
+                    comum em empresas de tecnologia que estão desenvolvendo um
+                    novo produto e querem levantar fundos para sua finalização e
+                    lançamento.
+                  </p>
                 </div>
               </div>
-              <!-- /Accordion -->
+
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle3" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle3">
+                  O que é um whitepapper ?
+                </label>
+                <div class="accordion-content">
+                  <p>
+                    Um whitepaper é um documento que apresenta uma solução para
+                    um problema técnico ou de negócios. Eles são geralmente
+                    usados para promover produtos ou serviços, mas também podem
+                    ser usados para apresentar uma ideia ou uma estratégia de
+                    maneira mais formal.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle4" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle4">
+                  O que é a WVW ?
+                </label>
+                <div class="accordion-content">
+                  <p>
+                    Se você já assiste vídeos na internet mesmo sem receber nada
+                    pra isso, essa é a sua chance de fazer uma renda extra!
+                    Receba $WVW por engajar com seus conteúdos favoritos,
+                    concorra a prêmios exclusivos toda semana, e além de tudo
+                    isso, essa pode ser a sua chance de criar seu próprio canal
+                    bem sucedido!
+                  </p>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle5" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle5">
+                  Quando vai ser lançado ?
+                </label>
+                <div class="accordion-content">
+                  <p>Vai ser lançado dia 11 de Janeiro de 2023.</p>
+                </div>
+              </div>
             </div>
+            <!-- /Accordion -->
+          </div>
+
+          <div class="column is-5">
+            <!-- Accordion -->
+            <div class="accordion">
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle6" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle6">
+                  Quantos Tokens serão vendidos ?
+                </label>
+                <div class="accordion-content">
+                  <p>Na pre-sale serão vendidos 10 milhões de Tokens.</p>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle7" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle7">
+                  O que acontece se o valor não for atingido? ?
+                </label>
+                <div class="accordion-content">
+                  <p>
+                    Se o valor não for atingido os idealizadores do projeto irão
+                    investir o necessário para a compra dos Tokens restantes.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle8" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle8">
+                  O que acontece depois ?
+                </label>
+                <div class="accordion-content">
+                  <p>
+                    Após isso, o Token será lançado na PancakeSwap e o projeto
+                    será lançado.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle9" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle9">
+                  Como será a distribuição do token ?
+                </label>
+                <div class="accordion-content">
+                  <p>
+                    Será que acordo com a Tokenomics do projeto. Está na página
+                    Token.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div class="accordion-option">
+                <input type="checkbox" id="toggle10" class="accordion-toggle" />
+                <label class="accordion-title" for="toggle10">
+                  Qual as recompensas ?
+                </label>
+                <div class="accordion-content">
+                  <p>
+                    As recompensas serão pagas em WVW após o usuários assistir
+                    os vídeos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- /Accordion -->
           </div>
         </div>
-        <!-- /Content wrapper -->
-        </div>
-    </section>
+      </div>
+      <!-- /Content wrapper -->
+    </div>
+  </section>
 </div>
