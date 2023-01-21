@@ -2,7 +2,7 @@ export function initCountdown() {
   return {
     setupCountdown() {
       // Set the date we're counting down to
-      var countDownDate = new Date("Jan 21, 2023 20:00:00").getTime();
+      var countDownDate = new Date("Jan 21, 2023 22:00:00").getTime();
 
 
       // Update the count down every 1 second
